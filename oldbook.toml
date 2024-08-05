@@ -1,0 +1,234 @@
+# Helix color scheme almost copied 1 to 1 from the Vim colorscheme oldbook. Original schema is in the bottom of file. 
+
+type = { fg = "type", modifiers = ["bold"] }
+constant = "constant"
+number = "constant"
+string = "constant"
+comment = "comment"
+variable = "constant"
+"variable.builtin" = "constant"
+"variable.parameter" = "constant"
+"variable.property" = "constant"
+punctuation = "delim"
+"punctuation.delimiter" = "delim"
+"punctuation.bracket" = "delim"
+keyword = { fg = "type", modifiers = ["bold"] }
+operator = { fg = "type", modifiers = ["bold"] }
+function = { fg = "type", modifiers = ["bold"] }
+"function.builtin" = { fg = "type", modifiers = ["bold"] }
+"function.macro" = { fg = "type", modifiers = ["bold"] }
+tag = { fg = "type", modifiers = ["bold"] }
+namespace = "constant"
+attribute = "constant"
+constructor = { fg = "type", modifiers = ["bold"] }
+module = { fg = "type", modifiers = ["bold"] }
+special = "special"
+
+"ui.background" = { bg = "bg" }
+"ui.cursor" = { bg = "fg" }
+"ui.cursor.match" = "match"
+"ui.cursor.insert" = { bg = "fg" }
+"ui.cursor.select" = { fg = "bg", bg = "incselbg" }
+"ui.linenr" = "comment"
+"ui.linenr.selected" = "selbg"
+"ui.statusline" = { fg = "statusfg", bg = "comment" }
+"ui.statusline.inactive" = { fg = "delim", bg = "comment" }
+"ui.popup" = { fg = "snow", bg = "dim" }
+"ui.window" = { fg = "snow", bg = "dim" }
+"ui.help" = { fg = "snow", bg = "dim" }
+"ui.text" = "fg"
+"ui.text.focus" = { fg = "comment", bg = "incselbg" }
+"ui.menu" = { fg = "statusfg", bg = "bg" }
+"ui.menu.selected" = { fg = "statusfg", bg = "comment" }
+"ui.selection" = { fg = "comment", bg = "statusfg" }
+"ui.virtual.whitespace" = "statusfg"
+"ui.virtual.ruler" = { bg = "statusfg" }
+"ui.virtual.inlay-hint" = { fg = "statusfg", modifiers = ["italic"] }
+
+hint = "delim"
+info = "fg"
+warning = "accent"
+error = "error"
+
+"diagnostic.hint" = "delim"
+"diagnostic.info" = { fg = "fg", modifiers = ["bold"], underline = { color = "fg" } }
+"diagnostic.warning" = { fg = "accent", modifiers = ["bold"], underline = { color = "accent" } }
+"diagnostic.error" = { fg = "bg", bg = "error"}
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"diff.plus"  = "dir"
+"diff.delta" = "incselbg"
+"diff.minus" = "error"
+
+"ui.statusline.normal" = { bg = "incselbg" }
+"ui.statusline.insert" = { bg = "dir" }
+"ui.statusline.select" = { bg = "error" }
+
+# "markup.heading" = { fg = "purple", modifiers = ["bold"] }
+# "markup.list" = "cyan"
+# "markup.bold" = { fg = "orange", modifiers = ["bold"] }
+# "markup.italic" = { fg = "yellow", modifiers = ["italic"] }
+# "markup.strikethrough" = { modifiers = ["crossed_out"] }
+# "markup.link.url" = "cyan"
+# "markup.link.text" = "pink"
+# "markup.quote" = { fg = "yellow", modifiers = ["italic"] }
+# "markup.raw" = { fg = "fg" }
+
+[palette]
+bg       = "#3c4855"
+fg       = "#ebeae9"
+comment  = "#616c72"
+constant = "#999083"
+type     = "#a5a6a4"
+special  = "#a18069"
+delim    = "#899ba6"
+error    = "#db6c6c"
+accent   = "#3ba2cc"
+selbg    = "#ddd668"
+incselbg = "#d5bc02"
+dir      = "#5bb899"
+visual   = "#87d7ff"
+statusfg = "#c5d4dd"
+match    = "#3ba2cc"
+dim      = "#333333"
+
+# " ORIGINAL VIM COLOR SCHEME
+# " Maintainer:   Karolis Koncevicius
+# " Inspirations: sidonia, zazen
+
+#   hi Normal         cterm=NONE        guibg=#3c4855 guifg=#ebeae9 gui=NONE
+
+#   hi Comment        cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+#   hi Statement      cterm=BOLD        guibg=NONE    guifg=#a5a6a4 gui=NONE
+#   hi Type           cterm=BOLD        guibg=NONE    guifg=#a5a6a4 gui=NONE
+#   hi Function       cterm=BOLD        guibg=NONE    guifg=#a5a6a4 gui=NONE
+#   hi PreProc        cterm=BOLD        guibg=NONE    guifg=#a5a6a4 gui=NONE
+
+#   hi Title          cterm=BOLD        guibg=NONE    guifg=#ebeae9 gui=BOLD
+#   hi Special        cterm=NONE        guibg=NONE    guifg=#a18069 gui=NONE
+#   hi Identifier     cterm=NONE        guibg=NONE    guifg=#999083 gui=NONE
+#   hi Constant       cterm=NONE        guibg=NONE    guifg=#999083 gui=NONE
+#   hi Boolean        cterm=NONE        guibg=NONE    guifg=#999083 gui=NONE
+#   hi String         cterm=NONE        guibg=NONE    guifg=#999083 gui=NONE
+#   hi Delimiter      cterm=NONE        guibg=NONE    guifg=#899ba6 gui=NONE
+
+#   hi LineNr         cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+#   hi CursorLineNr   cterm=NONE        guibg=NONE    guifg=#ddd668 gui=NONE
+#   hi MatchParen     cterm=NONE        guibg=NONE    guifg=#3ba2cc gui=NONE
+#   hi Conceal        cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+#   hi SpecialKey     cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+#   hi ColorColumn    cterm=NONE        guibg=#616c72 guifg=#616c72 gui=NONE
+#   hi SignColumn     cterm=NONE        guibg=#616c72 guifg=#616c72 gui=NONE
+#   hi Folded         cterm=NONE        guibg=NONE    guifg=#3ba2cc gui=NONE
+#   hi FoldColumn     cterm=NONE        guibg=NONE    guifg=#3ba2cc gui=NONE
+
+#   hi Directory      cterm=NONE        guibg=NONE    guifg=#5bb899 gui=NONE
+#   hi Underlined     cterm=UNDERLINE   guibg=NONE    guifg=NONE    gui=NONE
+
+#   hi Visual         cterm=REVERSE     guibg=NONE    guifg=#87d7ff gui=REVERSE
+#   hi VisualNOS      cterm=UNDERLINE   guibg=NONE    guifg=NONE    gui=UNDERLINE
+#   hi IncSearch      cterm=NONE        guibg=#d5bc02 guifg=#3c4855 gui=NONE
+#   hi Search         cterm=NONE        guibg=#ddd668 guifg=#3c4855 gui=NONE
+
+#   hi StatusLine     cterm=NONE        guibg=#616c72 guifg=#c5d4dd gui=NONE
+#   hi StatusLineNC   cterm=NONE        guibg=#616c72 guifg=#c5d4dd gui=NONE
+#   hi VertSplit      cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+#   hi WildMenu       cterm=NONE        guibg=#c5d4dd guifg=#3c4855 gui=NONE
+#   hi ModeMsg        cterm=NONE        guibg=NONE    guifg=#5bb899 gui=NONE
+
+#   hi DiffAdd        cterm=NONE        guibg=#5bb899 guifg=#3c4855 gui=NONE
+#   hi DiffDelete     cterm=NONE        guibg=#db6c6c guifg=#3c4855 gui=NONE
+#   hi DiffChange     cterm=UNDERLINE   guibg=#3c4855 guifg=#d5bc02 gui=UNDERLINE
+#   hi DiffText       cterm=NONE        guibg=#d5bc02 guifg=#3c4855 gui=NONE
+
+#   hi Pmenu          cterm=NONE        guibg=#616c72 guifg=#c5d4dd gui=NONE
+#   hi PmenuSel       cterm=REVERSE     guibg=#3c4855 guifg=#c5d4dd gui=REVERSE
+#   hi PmenuSbar      cterm=NONE        guibg=#616c72 guifg=NONE    gui=NONE
+#   hi PmenuThumb     cterm=NONE        guibg=#c5d4dd guifg=NONE    gui=NONE
+
+#   hi SpellBad       cterm=UNDERCURL   guibg=NONE    guifg=NONE    gui=UNDERCURL
+#   hi SpellCap       cterm=UNDERCURL   guibg=NONE    guifg=NONE    gui=UNDERCURL
+#   hi SpellLocal     cterm=UNDERCURL   guibg=NONE    guifg=NONE    gui=UNDERCURL
+#   hi SpellRare      cterm=UNDERCURL   guibg=NONE    guifg=NONE    gui=UNDERCURL
+
+#   hi ErrorMsg       cterm=NONE        guibg=#db6c6c guifg=#616c72 gui=NONE
+#   hi WarningMsg     cterm=NONE        guibg=NONE    guifg=#db6c6c gui=NONE
+#   hi MoreMsg        cterm=NONE        guibg=NONE    guifg=#5bb899 gui=NONE
+#   hi Question       cterm=NONE        guibg=NONE    guifg=#5bb899 gui=NONE
+
+#   hi TabLine        cterm=NONE        guibg=#616c72 guifg=#c5d4dd gui=NONE
+#   hi TabLineSel     cterm=REVERSE     guibg=#3c4855 guifg=#c5d4dd gui=REVERSE
+#   hi TabLineFill    cterm=NONE        guibg=#616c72 guifg=#ebeae9 gui=NONE
+
+#   hi Error          cterm=REVERSE     guibg=NONE    guifg=#db6c6c gui=REVERSE
+#   hi Ignore         cterm=NONE        guibg=NONE    guifg=NONE    gui=NONE
+#   hi Todo           cterm=UNDERLINE   guibg=NONE    guifg=#3ba2cc gui=UNDERLINE
+
+#   hi NonText        cterm=NONE        guibg=NONE    guifg=#616c72 gui=NONE
+
+#   hi Cursor         cterm=NONE        guibg=#ebeae9 guifg=NONE    gui=NONE
+#   hi CursorColumn   cterm=NONE        guibg=#616c72 guifg=NONE    gui=NONE
+#   hi CursorLine     cterm=NONE        guibg=#616c72 guifg=NONE    gui=NONE
+
+#   hi helpleadblank  cterm=NONE        guibg=NONE    guifg=NONE    gui=NONE
+#   hi helpnormal     cterm=NONE        guibg=NONE    guifg=NONE    gui=NONE
+
+# hi link Number             Constant
+# hi link Character          Constant
+
+# hi link Conditional        Statement
+# hi link Debug              Special
+# hi link Define             PreProc
+# hi link Exception          Statement
+# hi link Float              Number
+# hi link HelpCommand        Statement
+# hi link HelpExample        Statement
+# hi link Include            PreProc
+# hi link Keyword            Statement
+# hi link Label              Statement
+# hi link Macro              PreProc
+# hi link Operator           Statement
+# hi link PreCondit          PreProc
+# hi link Repeat             Statement
+# hi link SpecialComment     Delimiter
+# hi link StorageClass       Type
+# hi link Structure          Type
+# hi link Tag                Special
+# hi link Typedef            Type
+
+# hi link htmlEndTag         htmlTagName
+# hi link htmlLink           Function
+# hi link htmlSpecialTagName htmlTagName
+# hi link htmlTag            htmlTagName
+# hi link xmlTag             Statement
+# hi link xmlTagName         Statement
+# hi link xmlEndTag          Statement
+
+# hi link markdownItalic     Preproc
+
+# hi link pandocDelimitedCodeBlockLanguage    Delimiter
+# hi link rOKeyword                           SpecialComment
+
+# hi link diffBDiffer        WarningMsg
+# hi link diffCommon         WarningMsg
+# hi link diffDiffer         WarningMsg
+# hi link diffIdentical      WarningMsg
+# hi link diffIsA            WarningMsg
+# hi link diffNoEOL          WarningMsg
+# hi link diffOnly           WarningMsg
+# hi link diffRemoved        WarningMsg
+# hi link diffAdded          String
+
+# hi link vimHiAttrib        Constant
+# hi link vimParenSep        Normal
+# hi link vimVar             Normal
+# hi link vimMapMod          Identifier
+# hi link vimMapModKey       Identifier
+# hi link vimNotation        Identifier
+# hi link vimBracket         Identifier
+
+# hi link QuickFixLine       TabLineSel
+# hi link qfFileName         Function
+# hi link qfLineNr           String
+# hi link qfSeparator        Comment
